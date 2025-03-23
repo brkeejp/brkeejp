@@ -3,32 +3,28 @@
   personal: {
     firstName: "Berk Ege",
     lastName: undefined,
-    gender: Gender.MALE,
+    gender: EGender.MALE,
     birthPlace: "Turkey",
     age: 24
   },
   interests: {
     book: [
-      Book.novel.tag.fantasy,
-      Book.novel.tag.supernatural,
-      Book.manga
+      Book.tag.fantasy,
+      Book.tag.supernatural,
+      Book.type.manga,
+      Book.type.novel
     ],
     movie: [
       Movie.serie.get("Harry Potter"),
       Movie.serie.get("Pirates of Caribbean")
     ],
     computer: [
-      Computer.game,
-      Computer.game.get("Osu!"),
-      //Computer.development.code,
-      //Computer.development.game,
-      //Computer.development.program,
-      // ・・・ ⋋( 'Θ')⋌
-      Computer.development
+      Computer.activity.game,
+      Computer.activity.code
   },
   job: {
-    status: "looking",
-    price: false,
+    status: EJobStatus.why_not,
+    price: unknown,
     details: "I wanna learn something?!"
   }
 }
